@@ -115,7 +115,7 @@
             let child = [];
             for (let i in node.children)
               child.push(node.children[i]);
-            child.sort(function (a, b) { return b.square > a.square });
+            child.sort(function (a, b) { return (b.value - a.value); });
             calcPos(child, [], x_, y_, width_, height_, parent_, 100000000);
           }
           totValue += nodelist[i].square;
@@ -171,10 +171,8 @@
       }
     }
   
-    let childlist = [];
-    for (let i in data.children)
-      childlist.push(data.children[i]);
-    childlist.sort(function (a, b) { return b.square > a.square });
+    let childlist = data.children;
+    childlist.sort(function (a, b) { return (b.value - a.value);});
     // console.log(childlist);
     calcPos(childlist, [], 0, 0, width, height, -1);
     return leaves;
