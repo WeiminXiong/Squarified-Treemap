@@ -1,0 +1,56 @@
+{
+    "name": "flare",
+    "children":[
+        {
+            "name":"first",
+            "value": 72000
+        },
+        {
+            "name":"second",
+            "children":[
+                {
+                    "name":"B1",
+                    "children":[
+                        {
+                            "name":"C1",
+                            "value":30000
+                        },
+                        {
+                            "name":"C2",
+                            "value":20000
+                        },
+                        {
+                            "name":"C3",
+                            "value":22000
+                        }
+                    ]
+                },
+                {
+                    "name":"B2",
+                    "value":72000
+                }
+            ]
+        },
+        {
+            "name":"third",
+            "value": 216000
+        },
+        {
+            "name":"forth",
+            "value":288000
+        },
+        {
+            "name":"fifth",
+            "children":[
+                {
+                    "name":"A1",
+                    "value":180000
+                },
+                {
+                    "name":"A2",
+                    "value":180000
+                }
+            ]
+        }
+    ]
+}
